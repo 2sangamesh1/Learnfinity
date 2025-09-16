@@ -1,0 +1,19 @@
+{
+  "name": "learnfinity-hybrid-backend",
+  "version": "1.0.0",
+  "description": "Learnfinity Hybrid Backend - Node.js Main + Python ML Microservice",
+  "main": "start-backends.js",
+  "scripts": {
+    "start": "node start-backends.js",
+    "start:node": "cd backend && npm start",
+    "start:python": "cd python-backend && python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload",
+    "install:all": "npm install && cd backend && npm install && cd ../python-backend && pip install -r requirements.txt",
+    "dev": "node start-backends.js"
+  },
+  "keywords": ["learnfinity", "education", "ai", "ml", "hybrid", "backend"],
+  "author": "Learnfinity Team",
+  "license": "MIT",
+  "dependencies": {
+    "child_process": "^1.0.2"
+  }
+}

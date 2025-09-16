@@ -1,0 +1,5 @@
+faker==18.13.0
+python-dotenv==1.0.0
+supabase==2.3.4
+pandas==2.0.3
+numpy==1.24.3
